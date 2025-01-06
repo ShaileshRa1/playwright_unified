@@ -1,0 +1,562 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "cart-operation-tests;user-is-able-to-add-item-to-the-cart",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "user is able to add item to the cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1105418299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to app",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 834748199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "Sauce Demo Website login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78002300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user enters valid username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77329099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User click on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 199417600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "login is successful",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15021799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Verify 1st item is added to cart and is shown correctly on cart page",
+            "match": {
+              "location": "src\\test\\steps\\cartSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 270529999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Close the browser",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2177500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 106182499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-operation-tests;user-removes-cart-item-and-verify-that-the-cart-is-empty",
+        "keyword": "Scenario Outline",
+        "line": 30,
+        "name": "user Removes cart item and verify that the cart is empty",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 626446199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to app",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 644706100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "Sauce Demo Website login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46556800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "Sauce Demo Website login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10318300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "user enters valid username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77759999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "User click on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125492900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "login is successful",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16973900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "User removes cart item and verify that the cart is empty",
+            "match": {
+              "location": "src\\test\\steps\\cartSteps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 406766599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Close the browser",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 644700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 93546499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "cart-operation-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Cart operation tests",
+    "tags": [],
+    "uri": "src\\test\\features\\cartOperations.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;login-page",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login Page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1089062900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to app",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 640036400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Sauce Demo Website login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37536800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Close the browser",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 198600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 87192300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;user-is-able-to-login-with-valid-users",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "user is able to login with valid users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 407349300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to app",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 682291699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "Sauce Demo Website login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46157000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user enters valid username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64333099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User click on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176265300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "login is successful",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11786700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "user logs out",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1079139800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Close the browser",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 86170899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;user-is-not-able-to-login-with-invalid-users",
+        "keyword": "Scenario Outline",
+        "line": 34,
+        "name": "user is not able to login with Invalid users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3573560999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to app",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 797289800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "Sauce Demo Website login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46271799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "user enters valid username \"locked_out_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62222700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "User click on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87190799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "Error message \"Epic sadface: Sorry, this user has been locked out.\" is shown",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9773400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Close the browser",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 247999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 161324899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  }
+]

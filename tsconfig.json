@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "esModuleInterop": true // Optional, but recommended for better interoperability
+    }
+  }
