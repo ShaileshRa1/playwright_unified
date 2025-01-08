@@ -31,3 +31,11 @@ WebKit - web browser engine used by Safari
 
 
 *This is still a work in progress and we are planning to include logger, environment switching, page object model, Tags, and a few more features in upcoming days :) 
+
+
+Sample Cucumber report:
+![image](https://github.com/user-attachments/assets/9b05aed5-f08c-41fe-ac6b-3f44a495bf43)
+
+Sample report multiple-cucumber-html-reporter:
+![image](https://github.com/user-attachments/assets/4af0c3b1-3f5a-4ad0-885d-afcff1aea714)
+
