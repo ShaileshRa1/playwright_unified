@@ -1,23 +1,29 @@
 # playWright_unified
  This playwright automation framework combines running UI and API tests from a single framework
  
- About playwright
+ **About playwright**
+ 
  PlayWright Test was created specifically to accommodate the needs of end-to-end testing. Playwright supports all modern rendering engines including Chromium, WebKit, and Firefox. Test on Windows, Linux, and macOS, locally or on CI, headless or headed with native mobile emulation of Google Chrome for Android and Mobile Safari.
 
  For Demo purpose web UI test cases are created for https://www.saucedemo.com/ site.
 
-Features:
+**Features**:
 
 -This testing framework supports Behavior Driven Development (BDD). Tests are written in plain English text called Gherkin
+
 -Supports execution of tests in different browsers.
--Supports running scenarios in parallel mode. It runs 2 scenarios in parallel by default.
+
+-Supports running scenarios in parallel mode.
+
 -Supports rerun of the failed scenarios.
+
 -Generates Cucumber HTML Report 
+
 -Also include multiple-cucumber-html-reporter HTML Report. 
 https://www.npmjs.com/package/multiple-cucumber-html-reporter
 
 
-Supported Browsers:
+**Supported Browsers:**
 Chrome - default browser
 Firefox
 MS Edge
