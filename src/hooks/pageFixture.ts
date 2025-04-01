@@ -1,3 +1,3 @@
 export const pageFixture = {
-    page : undefined
+    page: undefined
 }

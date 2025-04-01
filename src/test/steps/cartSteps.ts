@@ -1,8 +1,8 @@
 import { Given, When, Then, setDefaultTimeout } from "@cucumber/cucumber";
-import {expect} from "@playwright/test"
+import { expect } from "@playwright/test"
 import { pageFixture } from "../../hooks/pageFixture";
 
-setDefaultTimeout(60*100*2)
+setDefaultTimeout(60 * 100 * 2)
 
 Then('Verify 1st item is added to cart and is shown correctly on cart page', async function () {
   //Get text for 1st item
@@ -15,7 +15,7 @@ Then('Verify 1st item is added to cart and is shown correctly on cart page', asy
 
   //navigate to cart pageFixture.page
   await pageFixture.page.locator('//*[@id="shopping_cart_container"]/a').click();
-  
+
 
   //From cart pageFixture.page get the text from the added item
   const secondLocator = await pageFixture.page.locator('//*[@id="item_4_title_link"]/div').textContent();
@@ -46,10 +46,10 @@ Then('User removes cart item and verify that the cart is empty', async function 
   expect(firstLocator?.trim()).toEqual(secondLocator?.trim());
   //remove cart item
   await pageFixture.page.locator('[data-test="remove-sauce-labs-backpack"]').click();
-    await pageFixture.page.locator('[data-test="continue-shopping"]').click();
-    await pageFixture.page.locator('[data-test="shopping-cart-link"]').click();
-    await pageFixture.page.locator('[data-test="cart-list"]').click();
-    expect(secondLocator?.trim()).toBeFalsy;
+  await pageFixture.page.locator('[data-test="continue-shopping"]').click();
+  await pageFixture.page.locator('[data-test="shopping-cart-link"]').click();
+  await pageFixture.page.locator('[data-test="cart-list"]').click();
+  expect(secondLocator?.trim()).toBeFalsy;
 });
 
 

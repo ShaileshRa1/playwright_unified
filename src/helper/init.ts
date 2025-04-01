@@ -1,12 +1,12 @@
-const fs = require ("fs-extra");
+const fs = require("fs-extra");
 
-try{
+try {
     fs.ensureDir("test-result");
     fs.emptyDir("test-result")
 }
 
-    catch(error){
-        console.log("Folder not created!" +error);
+catch (error) {
+    console.log("Folder not created!" + error);
 
-    }
-    
+}
+
