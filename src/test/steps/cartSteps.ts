@@ -4,19 +4,9 @@ import { pageFixture } from "../../hooks/pageFixture";
 
 setDefaultTimeout(60*100*2)
 
-// Then('Add 1st item to the cart', async function () {
-//   await pageFixture.page.locator('//*[@id="add-to-cart-sauce-labs-backpack"]').click;
-// });
-
-// Then('User navigates to cart pageFixture.page', async function () {
-//   await pageFixture.page.locator('//*[@id="shopping_cart_container"]/a').click();
-//   await pageFixture.page.waitForTimeout(2000);
-// });
-
 Then('Verify 1st item is added to cart and is shown correctly on cart page', async function () {
   //Get text for 1st item
   const firstLocator = await pageFixture.page.locator('//*[@id="item_4_title_link"]/div').textContent();
-  //const firstText = await firstLocator.textContent();
   console.log(firstLocator);
   //Check the text of 1st item
   expect(firstLocator).toEqual('Sauce Labs Backpack');
