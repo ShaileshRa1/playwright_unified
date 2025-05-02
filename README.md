@@ -22,6 +22,9 @@
 -Also include multiple-cucumber-html-reporter HTML Report. 
 https://www.npmjs.com/package/multiple-cucumber-html-reporter
 
+-Run the test : npm test
+* To install the type definitions for Node.js as a development dependency in your project run this command:  npm i --save-dev @types/node
+
 
 **Supported Browsers:**
 Chrome - default browser
